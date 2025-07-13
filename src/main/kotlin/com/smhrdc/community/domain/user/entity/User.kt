@@ -17,4 +17,8 @@ class User(
 
     @Column(nullable = false)
     var name: String
-)
+){
+    override fun toString(): String {
+        return "User(id=$id, email='$email', password='[PROTECTED]', name='$name')"
+    }
+}
